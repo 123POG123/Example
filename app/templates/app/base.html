@@ -1,0 +1,155 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'app/css/style1.css' %}">
+    <script src="https://kit.fontawesome.com/23b7fb484f.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+{#--------header----------#}
+<header class="header">{% include 'app/navbar.html' %}</header>
+{#----------course-------------#}
+<section class="course">
+    <div>
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Inrtermediat</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. A aliquam asperiores
+                    aspernatur beatae eum libero optio, placeat
+                    praesentium tenetur voluptatum!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. A aliquam asperiores
+                    aspernatur beatae eum libero optio, placeat
+                    praesentium tenetur voluptatum!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. A aliquam asperiores
+                    aspernatur beatae eum libero optio, placeat
+                    praesentium tenetur voluptatum!</p>
+            </div>
+        </div>
+    </div>
+</section>
+{#---------- campus --------------#}
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, quaerat?</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'app/image/2.jpg' %}" alt="">
+            <div class="layer">
+                <h3>london</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'app/image/1.jpeg' %}" alt="">
+            <div class="layer">
+                <h3>paris</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'app/image/3.jpg' %}" alt="">
+            <div class="layer">
+                <h3>los Angeles</h3>
+            </div>
+        </div>
+    </div>
+</section>
+{#---------- facilities ----------#}
+<section class="facilities">
+    <h1>Our Fasilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, natus?</p>
+    <div class="row">
+        <div class="fasilities-col">
+            <img src="{% static 'app/image/lib.jpg' %}">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas, veritatis?</p>
+        </div>
+        <div class="fasilities-col">
+            <img src="{% static 'app/image/basket.jpg' %}">
+            <h3>Largest Play Ground </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas, veritatis?</p>
+        </div>
+        <div class="fasilities-col">
+            <img src="{% static 'app/image/teasty.jpg' %}">
+            <h3>Tasty And healthy Food</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas, veritatis?</p>
+        </div>
+    </div>
+</section>
+{#--------testimonials-------#}
+<section class="testimonials">
+    <h1>What Our Students</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="{% static 'app/image/31.jpg' %}" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Culpa, saepe unde! Dolore error inventore molestiae possimus
+                    sint sit vel voluptates.</p>
+                <h3>Martin</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="{% static 'app/image/32.jpg' %}" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Culpa, saepe unde! Dolore error inventore molestiae possimus
+                    sint sit vel voluptates.</p>
+                <h3>Luther</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+</section>
+{#-------- Call To Action -------#}
+<section class="cta">
+    <h1>Enroll For Our Various Online Courses <br> Anywhere From Worlds </h1>
+    <a href="" class="hero-btn">contact as</a>
+</section>
+{#--------- footer ---------#}
+<section class="footer">
+    {% include 'app/footer.html' %}</section>
+{#--------- JavaScript for Toggle Menu --------#}
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu() {
+        navLinks.style.right = "-400px";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "0";
+    }
+</script>
+</body>
+</html>

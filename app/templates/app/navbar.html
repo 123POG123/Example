@@ -1,0 +1,21 @@
+{% load static %}
+<nav>
+    <a href="{% url 'main' %}"><img src="{% static 'app/image/11.jpg' %}" alt=""></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fas fa-times hid_en" onclick="showMenu()"></i>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">course</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <i class="fas fa-bars hid_en" onclick="hideMenu()"></i>
+</nav>
+<div class="text-box">
+    <h1>World's Biggest University</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem facere odit quasi quod! Amet, nam, recusandae.
+        <br>Lorem ipsum dolor sit amet, consectetur.</p>
+    <a href="#" class="hero-btn">Visit Us To know More</a>
+</div>
