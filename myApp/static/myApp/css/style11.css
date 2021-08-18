@@ -1,0 +1,371 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+
+/*------------header--------------*/
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../image/background_main.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header nav a img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+
+.nav-linkss ul {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-linkss ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    list-style: none;
+    position: relative;
+}
+
+.nav-linkss ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-linkss ul li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: cyan;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-linkss ul li a:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+    font-size: 63px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    padding: 12px 13px;
+    transition: 1s;
+}
+
+.hero-btn:hover {
+    transition: 1s;
+    color: cornsilk;
+    background: darkred;
+    border: 1px solid darkred;
+
+}
+
+nav .fas {
+    display: none
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 30px;
+    }
+
+    .nav-linkss ul li {
+        display: block
+    }
+
+    nav i {
+        padding: 10px;
+    }
+
+    .nav-linkss {
+        position: absolute;
+        background: chocolate;
+        height: 100vh;
+        width: 50%;
+        z-index: 2;
+        top: 0;
+        right: -400px;
+        text-align: left;
+        transition: 1s;
+    }
+
+    .nav-linkss ul {
+        text-align: left;
+        margin-left: 3%;
+        padding: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 29px;
+        font-size: 25px;
+    }
+}
+
+/*----------------------------------*/
+/*---------------Discipline--------------*/
+.discepline {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.discepline h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.discepline p {
+    color: #777777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sports-coll {
+    flex-basis: 28%;
+    background: gainsboro;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+
+.sports-coll h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sports-coll:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column
+    }
+}
+
+/*----------------------------------------------------------------*/
+/*-------------------------sports-events--------------------------*/
+.sports-events {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.sports-city {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.sports-city img {
+    width: 100%;
+    display: block;
+}
+
+.layer12 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s
+}
+
+.layer12 h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer12:hover {
+    background: rgba(43, 171, 60, 0.7);
+}
+
+.layer12:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*------------------strange_cases----------------------------------------------*/
+.strange_cases {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.strange_cases__cool {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.strange_cases__cool img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.strange_cases__cool p {
+    padding: 0;
+}
+
+.strange_cases__cool h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*--------------------------sports rating--------------------------------------*/
+.sports-rating {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.sports_cool {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    background: #f8f2f2;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.sports_cool img {
+    width: 100%;
+}
+
+.sports_cool p {
+    color: rgba(22, 11, 13, 0.58);
+    padding-bottom: 10px;
+}
+
+.sports_cool h3 {
+    padding-bottom: 10px;
+}
+
+.sports_cool .fa {
+    color: #ffaa14;
+}
+
+/*----------------------------------------------------------------*/
+/*---------------------------contact-------------------------------------*/
+.contact {
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url("../image/end_sports.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact a {
+    text-transform: uppercase;
+    background-color: chocolate;
+}
+
+.contact a:hover {
+    background-color: #549f1e;
+    border: 1px solid #549f1e;
+}
+.contact h1 {
+    margin-bottom: 50px;
+    padding: 0px 0px 0px 0px;
+    color: rgba(212, 227, 8, 0.7);
+}
+
+
+/*----------------------------------------------------------------*/
+/*--------------------footer---------------------------------*/
+.footer{
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    background-color: #527279;
+    padding-bottom: 20px;
+}
+.footer h1{
+    padding-top: 40px;
+
+}
+.icons i {
+    color: orangered;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: crimson;
+}
+
+/*----------------------------------------------------------------*/

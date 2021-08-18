@@ -1,0 +1,220 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {#    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"#}
+    {#          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">#}
+    <script src="https://kit.fontawesome.com/23b7fb484f.js" crossorigin="anonymous"></script>
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,300;1,400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'myApp/css/style11.css' %}">
+</head>
+<body>
+{#------------------------header-------------------------#}
+<header class="header">
+    <nav>
+        <a href=""><img src="{% static 'myApp/image/label.jpg' %}" alt="label"></a>
+        <div class="nav-linkss" id="navLinks">
+            <i class="fas fa-times hid_en" onclick="showMenu()"></i>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">course</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars hid_en" onclick="HideMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>World's sport</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusamus deleniti,
+            et fuga quos reprehenderit voluptates?</p>
+        <a href="#" class="hero-btn">Visit Us To know More</a>
+    </div>
+</header>
+{#----------------------------------------------------------#}
+{#--------------------Discipline----------------#}
+<section class="discepline">
+    <div>
+        <h1>Sports Discipline</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed?</p>
+        <div class="row">
+            <div class="sports-coll">
+                <h3>Boxing</h3>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Ab ad architecto dolores hic itaque,
+                    laborum libero maiores natus nulla veritatis?</p>
+            </div>
+            <div class="sports-coll">
+                <h3>Volebol</h3>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Ab ad architecto dolores hic itaque,
+                    laborum libero maiores natus nulla veritatis?</p>
+            </div>
+            <div class="sports-coll">
+                <h3>kibyer</h3>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Ab ad architecto dolores hic itaque,
+                    laborum libero maiores natus nulla veritatis?</p>
+            </div>
+        </div>
+    </div>
+</section>
+{#------------------------sports-events--------------------#}
+<section class="sports-events">
+    <h1>Sport Events</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Facere, ipsam non porro quas quod similique.</p>
+    <div class="row">
+        <div class="sports-city">
+            <img src="{% static 'myApp/image/tokio.jpg' %}" alt="">
+            <div class="layer12">
+                <h3>Tokyo</h3>
+            </div>
+        </div>
+        <div class="sports-city">
+            <img src="{% static 'myApp/image/london.jpg' %}" alt="">
+            <div class="layer12">
+                <h3>London</h3>
+            </div>
+        </div>
+        <div class="sports-city">
+            <img src="{% static 'myApp/image/afiny.jpg' %}" alt="">
+            <div class="layer12">
+                <h3>Athens</h3>
+            </div>
+        </div>
+    </div>
+</section>
+{#------------------------------------------------------------------#}
+
+
+{#-----------------------------strange cases-------------------------------------#}
+<section class="strange_cases">
+    <h1>Strange Cases</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Autem doloremque ex fugit labore mollitia.
+        Dolores eaque fugiat
+        fugit nesciunt nobis porro repellendus.</p>
+    <div class="row">
+        <div class="strange_cases__cool">
+            <img src="{% static 'myApp/image/break.jpg' %}">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Iste, iure magnam natus quidem quis ullam.</p>
+        </div>
+        <div class="strange_cases__cool">
+            <img src="{% static 'myApp/image/run.jpg' %}">
+            <h3>Lorem ipsum consectetur adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Iste, iure magnam natus quidem quis ullam.</p>
+        </div>
+        <div class="strange_cases__cool">
+            <img src="{% static 'myApp/image/break.jpg' %}">
+            <h3>Lorem ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Iste, iure magnam natus quidem quis ullam.</p>
+        </div>
+    </div>
+</section>
+{#------------------------------------------------------------------#}
+
+{#--------------------------------sports rating----------------------------------#}
+<section class="sports-rating">
+    <h1>Sports Rating</h1>
+    <p>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        Adipisci amet aspernatur cupiditate dolorem esse,
+        in quod repellendus velit?</p>
+
+    <div class="row">
+        <div class="sports_cool">
+            <img src="{% static 'myApp/image/belator.jpg' %}" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Illo, saepe!</p>
+                <h3>UFS</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+        <div class="sports_cool">
+            <img src="{% static 'myApp/image/ufs.jpg' %}" alt="">
+            <div>
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Illo, saepe!</p>
+                <h3>Belator</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+</section>
+{#------------------------------------------------------------------#}
+{#------------------------contact------------------------------------------#}
+<section class="contact">
+    <h1>Ipsum dolor sit amet, consectetur adipisicing elit.
+        Enim nihil placeat quaerat qui repellendus sint?</h1>
+    <a href="#" class="hero-btn">contact as</a>
+</section>
+{#------------------------------------------------------------------#}
+
+<footer class="footer">
+    <h1>Lorem ipsum dolor sit?</h1>
+    <p>Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Magnam pariatur,
+        quaerat quisquam quos velit veritatis.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Lorem ipsum dolor.
+            <i class="fa fa-heart-o"></i>
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Reprehenderit.</p>
+    </div>
+</footer>
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu() {
+        navLinks.style.right = "-400px";
+    }
+
+    function HideMenu() {
+        navLinks.style.right = "0px";
+
+    }
+</script>
+{#<script src="{% static '' %}"></script>#}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+{#<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"#}
+{#        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"#}
+{#        crossorigin="anonymous"></script>#}
+{#<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"#}
+{#        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"#}
+{#        crossorigin="anonymous"></script>#}
+</body>
+</html>
