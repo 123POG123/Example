@@ -104,6 +104,11 @@ nav .fas {
 }
 
 @media (max-width: 700px) {
+    body {
+
+        overflow-x: hidden;
+    }
+
     .text-box h1 {
         font-size: 30px;
     }
@@ -338,6 +343,7 @@ nav .fas {
     background-color: #549f1e;
     border: 1px solid #549f1e;
 }
+
 .contact h1 {
     margin-bottom: 50px;
     padding: 0px 0px 0px 0px;
@@ -347,24 +353,27 @@ nav .fas {
 
 /*----------------------------------------------------------------*/
 /*--------------------footer---------------------------------*/
-.footer{
+.footer {
     width: 100%;
     font-weight: 600;
     text-align: center;
     background-color: #527279;
     padding-bottom: 20px;
 }
-.footer h1{
+
+.footer h1 {
     padding-top: 40px;
 
 }
+
 .icons i {
     color: orangered;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
 }
-.fa-heart-o{
+
+.fa-heart-o {
     color: crimson;
 }
 
